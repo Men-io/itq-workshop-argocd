@@ -7,11 +7,11 @@ metadata:
 spec:
   project: customer
   source:
-    repoURL: https://github.com/Men-io/itq-workshop-argocd
-    targetRevision: main
+    repoURL: https://github.com/mgnocchi-itq-eu/itq-workshop-argocd
+    targetRevision: master
     path: app-of-apps
   destination:
-    namespace: argocd
+    namespace: default
     name: in-cluster
   syncPolicy:
     automated:
